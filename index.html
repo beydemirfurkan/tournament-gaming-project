@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Swiper Slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+  <header class="position-absolute w-100 top-0" style="z-index: 33;">
+    <div class="container-fluid px-xl-5">
+        <div class="header-wrapper d-flex flex-wrap justify-content-between justify-content-xxl-center py-3 mb-4 align-items-center">
+              <a href="/" class="d-flex align-items-center me-md-auto">
+                <img src="assets/images/home/logo.png" alt="" style="width: 255px;" class="d-none d-md-block">
+                <img src="assets/images/home/logo.png" alt="" style="width: 200px;" class=" d-md-none">
+              </a>
+              <ul class="nav nav-pills align-items-center d-none d-xxl-flex">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">ana sayfa</a></li>
+                <li class="nav-item"><a href="game.html" class="nav-link">oyunlar</a></li>
+                <li class="nav-item"><a href="tournament.html" class="nav-link">turnuvalar</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">mağaza</a></li>
+                <li class="nav-item"><a href="alignment.html" class="nav-link">sıralama</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">
+                  <!-- <input type="search" class="form-control m-0 border-0 search-input" placeholder="ARAMA YAP"> -->
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input shadow-none rounded-0 border-dark bg-dark text-white" placeholder="OYUNCU ARA" >
+                    <span class="input-group-text bg-dark shadow-none text-white border-dark border-start-0" id="basic-addon2"><i class="bi bi-search"></i></span>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-wallet2 text-white  fs-4"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-bell-fill  fs-4"></i></a>
+              </li>
+                <li class="nav-item">
+                  <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-people-fill me-2 fs-4"></i>üyelik</a>
+                </li>
+                <li class="nav-item">
+                  <a href="shop.html" class="nav-link d-flex align-items-center position-relative bi bi-cart2 text-white fs-4">
+                      <span class="position-absolute translate-middle badge fs-07 rounded-circle lh-1 text-dark" style="background-color: #f09c09; right: -3px; top: 4px;">
+                        1
+                      </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="d-flex d-xxl-none">
+                <a class="bi bi-list text-white fs-3 ms-3" data-bs-toggle="offcanvas" href="#canvasMobile" role="button">
+                </a>
+              </div>
+
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end d-block d-xxl-none" 
+    tabindex="-1" id="canvasMobile">
+      <div class="offcanvas-header">
+        <button type="button" class="bi bi-x-circle fs-3 text-white bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <ul class="nav nav-pills align-items-center text-uppercase fs-09 text-white d-flex flex-column">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">anasayfa</a></li>
+          <li class="nav-item"><a href="game.html" class="nav-link">oyunlar</a></li>
+          <li class="nav-item"><a href="tournament.html" class="nav-link">turnuvalar</a></li>
+          <li class="nav-item"><a href="alignment.html" class="nav-link">sıralama</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+          <li class="nav-item"><a href="javascript:void(0)" class="nav-link">
+
+            <div class="input-group">
+              <input type="text" class="form-control search-input shadow-none rounded-0 border-dark text-white" placeholder="ARAMA YAP" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text bg-transparent shadow-none text-white border-dark" id="basic-addon2"><i class="bi bi-search"></i></span>
+            </div>
+          </a>
+        </li>
+          <li class="nav-item">
+            <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-people-fill me-2 fs-4"></i>üyelik</a>
+          </li>
+          <li class="nav-item">
+            <a href="shop.html" class="nav-link d-flex align-items-center"><i class="bi bi-cart4 me-2 fs-4"></i>sepet</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+
+
+      <main>
+
+        <section class="home-hero">
+          <div class="container-fluid h-100 px-4">
+            <div class="row justify-content-between h-100 align-items-center px-md-5">
+              <div class="col-lg-7 col-xl-6 col-xxl-5 pt-5 pt-lg-0">
+                <div class="section-title">
+                  <h1 class="text-uppercase display-1 lh-1 custom-gradient">online <br> turnuvaları <br> keşfet</h1>
+                  <p class="text-white-50 fs-5 text-uppercase pt-3 " style="    font-family: 'Bebas Neue', cursive;">
+                      Benelusit’e üye ol. Turnuvalara <br>
+                      katıl, hayallerine ulaşma şansını yakala
+                  </p>
+                </div>
+                <a href="" class="position-absolute bottom-0 mb-5 d-none d-xl-block"><i class="bi bi-arrow-down text-white display-3"></i></a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
+        <div 
+        style="
+        background-image: url(./assets/images/uzay-bg.png);
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+        ">
+          <section class="upcoming py-md-5 px-xl-4">
+            <div class="container-fluid px-3 px-sm-5 py-5">
+                <div class="section-title mb-5">
+                    <h1 class="text-uppercase display-3 lh-1 custom-gradient">yakındaki turnuvalar</h1>
+                    <p class="text-white-50 fs-5 text-uppercase" style="font-family: 'Bebas Neue', cursive;">Gün içindeki turnuvalara göz at!</p>
+                </div>
+    
+                <div class="swiper gaming-slide">
+                    <div class="swiper-wrapper py-4">
+                        <div class="swiper-slide">
+                            <figure class="gaming-item">
+                                <img src="assets/images/game1.png" alt="Gaming Item">
+                                <figcaption class="px-3 py-2">
+                                    <p class="text-white">Benetlusit Legends Premium</p>
+                                    <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                    <div class="d-flex py-2">
+                                        <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                        <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="gaming-item">
+                                <img src="assets/images/game2.png" alt="Gaming Item">
+                                <figcaption class="px-3 py-2">
+                                    <p class="text-white">Benetlusit Legends Premium</p>
+                                    <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                    <div class="d-flex py-2">
+                                        <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                        <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="gaming-item">
+                                <img src="assets/images/game3.png" alt="Gaming Item">
+                                <figcaption class="px-3 py-2">
+                                    <p class="text-white">Benetlusit Legends Premium</p>
+                                    <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                    <div class="d-flex py-2">
+                                        <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                        <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="gaming-item">
+                                <img src="assets/images/game1.png" alt="Gaming Item">
+                                <figcaption class="px-3 py-2">
+                                    <p class="text-white">Benetlusit Legends Premium</p>
+                                    <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                    <div class="d-flex py-2">
+                                        <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                        <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="gaming-item">
+                                <img src="assets/images/game2.png" alt="Gaming Item">
+                                <figcaption class="px-3 py-2">
+                                    <p class="text-white">Benetlusit Legends Premium</p>
+                                    <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                    <div class="d-flex py-2">
+                                        <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                        <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="gaming-item">
+                                <img src="assets/images/game3.png" alt="Gaming Item">
+                                <figcaption class="px-3 py-2">
+                                    <p class="text-white">Benetlusit Legends Premium</p>
+                                    <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                    <div class="d-flex py-2">
+                                        <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                        <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+    
+    
+                    </div>
+                    <div class="swiper-pagination position-absolute bg-dark" style="top: 99%;"></div>
+                </div>
+            </div>
+          </section>
+    
+    
+          <section class="rivalry py-5 px-xl-4">
+            <div class="container-fluid px-3 px-sm-5 py-5">
+                <div class="row justify-content-between align-items-center py-5">
+                    <div class="col-xl-5 order-2 order-xl-1">
+                        <div class="section-title">
+                          <h1 class="text-uppercase display-1 lh-1 custom-gradient">rekabetçi olun ödülleri kazanın</h1>
+                          <p class="text-white-50 fs-6 pt-3 ">
+                            Turnuvaları kazanarak, iyi oyun ile sıralamalarda üste çıkarak, ya da o turnuvanın en iyi hareketlerinden birine imza atarak Gem’leri topla, birçok ödülün sahibi ol!
+                          </p>
+                        </div>
+                        <a href="" class="btn btn-primary-custom mt-5 bg-primary-custom text-white px-4 py-3 fs-6 rounded-pill text-uppercase fw-bold" style="width: 200px; max-width: 100%;">üye ol</a>
+                    </div>
+                    <div class="col-xl-6 order-1 order-xl-2 mb-5 mb-xl-0">
+                        <img src="assets/images/home/rank.png" alt="Rank">
+                    </div>
+                </div>
+            </div>
+          </section>
+        </div>
+
+
+  
+  
+        <section class="featured py-5 px-xl-4 bg-custom-dark">
+          <div class="container-fluid py-md-5 px-3 px-sm-5">
+              <div class="row justify-content-between align-items-center">
+                  <div class="col-xl-3">
+                      <img src="assets/images/home/legends.png" alt="">
+                  </div>
+  
+                  <div class="col-xl-3 mt-4 mt-xl-0">
+                      <div class="section-title">
+                          <h1 class="text-uppercase display-3 lh-1 custom-gradient">öne çıkan turnuva</h1>
+                          <hr style="opacity:1; color: white;">
+                          <h2 class="text-uppercase display-5 lh-1 custom-gradient2 py-4">benelusıt legends premium</h2>
+                          <div class="d-flex justify-content-between">
+                              <div><span class="text-uppercase text-white fs-08">1 gün önce</span></div>
+                              <div><span class="text-uppercase text-white fs-08">klasman: bireysel</span></div>
+                              <div><span class="text-uppercase text-green fs-08 d-flex align-items-center"> <div style="height: 25px; width: 25px; border-radius: 50%; background-color: #2fdf71; margin-right: 5px;"></div> devam ediyor</span></div>
+                          </div>
+                          <div class="d-flex py-2">
+                              <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                              <span class="mx-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                              <span><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                          </div>
+                      </div>
+  
+                      <a href="" class="btn btn-primary-custom mt-5 bg-primary-custom text-white px-4 py-3 fs-6 rounded-pill text-uppercase fw-bold" style="width: 200px; max-width: 100%;">üye ol</a>
+                  </div>
+                  <div class="col-xl-3 mt-5 mt-xl-0">
+                      <div class="register-table">
+                          <img src="assets/images/gamer-icon.png" alt="gamer icon">
+                          <p class="text-white fs-09 py-3">Mar69tin, ti fathy# <span class="text-white-50">ve diğer 3 oyuncu kayıt yaptırdı.</span></p>
+                          <table class="table table-responsive ">
+                              <tr>
+                                <td><img src="assets/images/stop-icon.png" alt="" style="width: 35px; height: 35px;"></td>
+                                <td class="text-white lh-lg">Kayıt Olan</td>
+                                <td class="text-white-50 lh-lg">12</td>
+                              </tr>
+                              <tr>
+                                <td><img src="assets/images/check-icon.png" alt="" style="width: 35px; height: 35px;"></td>
+                                <td class="text-white lh-lg">Onaylanan</td>
+                                <td class="text-white-50 lh-lg">10</td>
+                              </tr>
+                              <tr>
+                                <td><img src="assets/images/time-icon.png" alt="" style="width: 35px; height: 35px;"></td>
+                                <td class="text-white lh-lg">Kalan Yer</td>
+                                <td class="text-white-50 lh-lg">8</td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+  
+  
+        <section class="featured-game py-5 px-xl-4 bg-custom-dark">
+          <div class="container-fluid py-5 px-3 px-sm-5">
+            <div class="section-title text-center">
+              <h1 class="text-uppercase display-2 lh-1 custom-gradient mb-5">öne çıkan oyunlar</h1>
+
+            </div>
+            <div class="row justify-content-between">
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+  
+                <div class="col-6 col-lg-4 col-xl-3">
+                  <figure class="gaming-item text-center">
+                    <img src="assets/images/game2.png" alt="Gaming Item">
+                    <figcaption class="px-sm-3 py-2">
+                        <p class="text-white text-center">Benetlusit Legends Premium</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+            </div>
+          </div>
+  
+        </section>
+  
+  
+  
+        <section class="digital-shop px-white-50"
+        style="
+        background-image: url(./assets/images/digital-bg.png);
+        background-size: cover;
+        background-position: center;
+        padding: 200px 0;
+        "
+        >
+            <div class="container-fluid px-3 px-sm-5 py-5">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-xl-3">
+                  <div class="section-title">
+                    <h1 class="text-uppercase display-1 lh-1 custom-gradient">dijital mağaza</h1>
+                    <p class="text-white-50 py-3">
+                      Aradığın her şeyi bu mağazada bulabilirsin. Sahip olmak istediğin elektronik eşyalar, oyun deneyimini artıracak donanımlar, oyun paraları, cüzdan kodları ve çok daha fazlası bir turnuva uzağında seni bekliyor!
+                    </p>
+                  </div>
+                  <a href="" class="btn btn-custom-gradient-purple rounded-0 text-soft-blue text-uppercase fs-6 fw-bold" style="border-bottom: 4px solid #8c72fc;">tüm mağazayı gör</a>
+                </div>
+                <div class="col-xl-8">
+                  <div class="swiper diamond-slide">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <figure class="diamond-item text-center">
+                            <img src="assets/images/home/diamond-item1.png" alt="" style="width: 350px; max-width: 100%;">
+                            <figcaption class="py-3 px-2">
+                              <p class="text-uppercase text-white fs-6 fw-bold">500 fifa point</p>
+                              <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                              <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-3 py-3 fs-07 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>Sepete Ekle</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="swiper-slide">
+                          <figure class="diamond-item text-center">
+                            <img src="assets/images/home/diamond-item1.png" alt="" style="width: 350px; max-width: 100%;">
+                            <figcaption class="py-3 px-2">
+                              <p class="text-uppercase text-white fs-6 fw-bold">500 fifa point</p>
+                              <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                              <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-3 py-3 fs-07 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>Sepete Ekle</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="swiper-slide">
+                          <figure class="diamond-item text-center">
+                            <img src="assets/images/home/diamond-item1.png" alt="" style="width: 350px; max-width: 100%;">
+                            <figcaption class="py-3 px-2">
+                              <p class="text-uppercase text-white fs-6 fw-bold">500 fifa point</p>
+                              <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                              <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-3 py-3 fs-07 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>Sepete Ekle</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="button-prev position-absolute start-0 pointer" style="top: 35%; z-index: 333;"><i class="bi bi-arrow-left-circle fs-1 text-white"></i></div>
+                      <div class="button-next position-absolute end-0 pointer" style="top: 35%; z-index: 333;"><i class="bi bi-arrow-right-circle fs-1 text-white"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+      </main>
+
+
+
+
+
+
+      <footer class="py-5">
+        <div class="container-fluid px-3 px-sm-5 py-md-5">
+          <div class="row justify-content-between">
+            <div class="col-md-3 mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="assets/images/home/logo.png" alt="" style="width: 270px;">
+              </a>
+              <p class="text-muted">Türkiye’nin en güvenilir turnuva platformu.</p>
+            </div>
+        
+            <div class="col-md-4 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-footer-gradient mb-4">oyunlar</h4>
+              <ul class="list-unstyled row">
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FIFA 2022</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Kafa Topu 2</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Leauge of Legends</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Rocket League</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Teamfight Tactics</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Valorant</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">CS:GO</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Hearthstone</a></li>
+                </div>
+
+              </ul>
+            </div>
+        
+
+        
+            <div class="col-md-2 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-footer-gradient mb-4">kurumsal</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Hakkımızda</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">S.S.S</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Kariyer</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-footer-gradient mb-4">sosyal medya</h4>
+              <ul class="nav d-flex">
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-instagram"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-youtube"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-twitter"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-discord"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

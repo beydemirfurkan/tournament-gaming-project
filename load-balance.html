@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Swiper Slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="position-relative" 
+    style="background-image: url(assets/images/subpage/shop-bg.png); 
+    background-color: rgb(43, 43, 43);
+    background-repeat: no-repeat;
+    background-position: top center;"
+    >
+
+    <header class="position-absolute w-100 top-0" style="z-index: 33;">
+      <div class="container-fluid px-xl-5">
+          <div class="header-wrapper d-flex flex-wrap justify-content-between justify-content-xxl-center py-3 mb-4 align-items-center">
+                <a href="/" class="d-flex align-items-center me-md-auto">
+                  <img src="assets/images/home/logo.png" alt="" style="width: 255px;" class="d-none d-md-block">
+                  <img src="assets/images/home/logo.png" alt="" style="width: 200px;" class=" d-md-none">
+                </a>
+                <ul class="nav nav-pills align-items-center d-none d-xxl-flex">
+                  <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">anasayfa</a></li>
+                  <li class="nav-item"><a href="game.html" class="nav-link">oyunlar</a></li>
+                  <li class="nav-item"><a href="tournament.html" class="nav-link">turnuvalar</a></li>
+                  <li class="nav-item"><a href="alignment.html" class="nav-link">sıralama</a></li>
+                  <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+                  <li class="nav-item"><a href="javascript:void(0)" class="nav-link">
+                    <!-- <input type="search" class="form-control m-0 border-0 search-input" placeholder="ARAMA YAP"> -->
+                    <div class="input-group">
+                      <input type="text" class="form-control search-input shadow-none rounded-0 border-dark text-white" placeholder="ARAMA YAP" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <span class="input-group-text bg-transparent shadow-none text-white border-dark" id="basic-addon2"><i class="bi bi-search"></i></span>
+                    </div>
+                  </a>
+                </li>
+                  <li class="nav-item">
+                    <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-people-fill me-2 fs-4"></i>üyelik</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="shop.html" class="nav-link d-flex align-items-center"><i class="bi bi-cart4 me-2 fs-4"></i>sepet</a>
+                  </li>
+                </ul>
+                <div class="d-flex d-xxl-none">
+                  <a class="bi bi-list text-white fs-3 ms-3" data-bs-toggle="offcanvas" href="#canvasMobile" role="button">
+                  </a>
+                </div>
+
+          </div>
+      </div>
+
+      <div class="offcanvas offcanvas-end d-block d-xxl-none" 
+      tabindex="-1" id="canvasMobile">
+        <div class="offcanvas-header">
+          <button type="button" class="bi bi-x-circle fs-3 text-white bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <ul class="nav nav-pills align-items-center text-uppercase fs-09 text-white d-flex flex-column">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">anasayfa</a></li>
+            <li class="nav-item"><a href="game.html" class="nav-link">oyunlar</a></li>
+            <li class="nav-item"><a href="tournament.html" class="nav-link">turnuvalar</a></li>
+            <li class="nav-item"><a href="alignment.html" class="nav-link">sıralama</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link">
+
+              <div class="input-group">
+                <input type="text" class="form-control search-input shadow-none rounded-0 border-dark text-white" placeholder="ARAMA YAP" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text bg-transparent shadow-none text-white border-dark" id="basic-addon2"><i class="bi bi-search"></i></span>
+              </div>
+            </a>
+          </li>
+            <li class="nav-item">
+              <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-people-fill me-2 fs-4"></i>üyelik</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="nav-link d-flex align-items-center"><i class="bi bi-cart4 me-2 fs-4"></i>sepet</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </header>
+
+
+      <main class="pt-5">
+        <section class="blog-hero py-lg-5 mt-lg-5">
+          <div class="container-fluid h-100 px-4 pt-5">
+            <div class="row justify-content-between h-100 align-items-center px-md-5">
+              <div class="col-lg-7 col-xl-6 pt-5 pt-lg-0">
+                <div class="section-title">
+                  <span class="text-uppercase text-blue fw-bold "><i class="bi bi-arrow-left text-primary me-2"></i> benelusit</span>
+                  <h1 class="text-uppercase display-1 lh-1 custom-gradient">bakiye yükle</h1>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <section class="featured-game pb-5 px-xl-4 position-relative">
+            <div class="container-fluid pb-5 px-3 px-sm-5">
+              <div class="d-flex flex-wrap">
+    
+                  <div class="">
+                    <figure class="diamond-item text-center">
+                        <img src="assets/images/home/diamond-item1.png" alt="" style="width: 250px;">
+                        <figcaption class="pb-3 px-2">
+                          <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                          <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-4 py-3 fs-08 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>satın al</a>
+                        </figcaption>
+                      </figure>
+                  </div>
+                  <div class="">
+                    <figure class="diamond-item text-center">
+                        <img src="assets/images/home/diamond-item1.png" alt="" style="width: 250px; max-width: 100%;">
+                        <figcaption class="pb-3 px-2">
+                          <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                          <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-4 py-3 fs-08 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>satın al</a>
+                        </figcaption>
+                      </figure>
+                  </div>
+                  <div class="">
+                    <figure class="diamond-item text-center">
+                        <img src="assets/images/home/diamond-item1.png" alt="" style="width: 250px; max-width: 100%;">
+                        <figcaption class="pb-3 px-2">
+                          <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                          <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-4 py-3 fs-08 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>satın al</a>
+                        </figcaption>
+                      </figure>
+                  </div>
+                  <div class="">
+                    <figure class="diamond-item text-center">
+                        <img src="assets/images/home/diamond-item1.png" alt="" style="width: 250px; max-width: 100%;">
+                        <figcaption class="pb-3 px-2">
+                          <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                          <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-4 py-3 fs-08 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>satın al</a>
+                        </figcaption>
+                      </figure>
+                  </div>
+                  <div class="">
+                    <figure class="diamond-item text-center">
+                        <img src="assets/images/home/diamond-item1.png" alt="" style="width: 250px; max-width: 100%;">
+                        <figcaption class="pb-3 px-2">
+                          <p class="text-blue fw-bold d-flex justify-content-center align-items-center"><span class="me-2">200</span> <img src="assets/images/diamond-color-icon.png" alt="" style="width: 15px;"></p>
+                          <a href="" class="btn btn-primary-custom mt-3 bg-primary-custom text-white px-4 py-3 fs-08 rounded-pill text-uppercase fw-bold" style="width: 150px; max-width: 100%;"><i class="bi bi-cart4 me-2"></i>satın al</a>
+                        </figcaption>
+                      </figure>
+                  </div>
+
+                  
+    
+
+                  
+              </div>
+            </div>
+    
+        </section>
+  
+      </main>
+
+
+
+
+
+
+      <footer class="py-5  bg-custom-dark">
+        <div class="container-fluid px-3 px-sm-5 py-md-5">
+          <div class="row justify-content-between">
+            <div class="col-md-3 mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="assets/images/home/logo.png" alt="" style="width: 270px;">
+              </a>
+              <p class="text-muted">Türkiye’nin en güvenilir turnuva platformu.</p>
+            </div>
+        
+            <div class="col-md-4 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-gradient mb-3">oyunlar</h4>
+              <ul class="list-unstyled row">
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FIFA 2022</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kafa Topu 2</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Leauge of Legends</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rocket League</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teamfight Tactics</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valorant</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CS:GO</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hearthstone</a></li>
+                </div>
+
+              </ul>
+            </div>
+        
+
+        
+            <div class="col-md-2 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-gradient mb-3">kurumsal</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hakkımızda</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">S.S.S</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kariyer</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-gradient mb-3">sosyal medya</h4>
+              <ul class="nav d-flex">
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-instagram"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-youtube"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-twitter"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-discord"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

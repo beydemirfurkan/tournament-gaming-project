@@ -1,0 +1,74 @@
+
+
+
+section.home-hero {
+    background-image: url(../images/home/hero.png);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    background-color: rgb(43, 43, 43);
+}
+
+
+
+
+
+@media(min-width:768px) {
+    .featured-game {
+        figure.gaming-item {
+            margin-bottom: 35px;
+            img {
+                border-radius: 25px;
+                width: 350px;
+                height: 450px;
+                object-fit: cover;
+                max-width: 100%;
+                margin: auto;
+            }
+            p {
+                font-size: 18px!important;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+
+figure.gaming-item {
+    img {
+        width: 400px;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+.swiper-pagination-progressbar-fill {
+background-color: aliceblue!important;
+}
+
+
+body {
+    background-color: rgb(43, 43, 43);
+}
+
+
+@media (max-width:576px) {
+    .featured-game {
+        p {
+            font-size: .8rem;
+        }
+        .btn-primary-custom {
+            font-size: .7rem!important;
+        }
+    }
+}
+
+
+@media(max-width:1199px) {
+    .mindmap {
+        width: 1400px;
+        overflow-x: scroll!important;
+    }
+}

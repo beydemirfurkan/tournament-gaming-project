@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <!-- Swiper Slide -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/mindmap.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+      <header class="position-absolute w-100 top-0" style="z-index: 33;">
+        <div class="container-fluid px-xl-5">
+            <div class="header-wrapper d-flex flex-wrap justify-content-between justify-content-xxl-center py-3 mb-4 align-items-center">
+                  <a href="/" class="d-flex align-items-center me-md-auto">
+                    <img src="assets/images/home/logo.png" alt="" style="width: 255px;" class="d-none d-md-block">
+                    <img src="assets/images/home/logo.png" alt="" style="width: 200px;" class=" d-md-none">
+                  </a>
+                  <ul class="nav nav-pills align-items-center d-none d-xxl-flex">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">anasayfa</a></li>
+                    <li class="nav-item"><a href="game.html" class="nav-link">oyunlar</a></li>
+                    <li class="nav-item"><a href="tournament.html" class="nav-link">turnuvalar</a></li>
+                    <li class="nav-item"><a href="alignment.html" class="nav-link">sıralama</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">
+                      <!-- <input type="search" class="form-control m-0 border-0 search-input" placeholder="ARAMA YAP"> -->
+                      <div class="input-group">
+                        <input type="text" class="form-control search-input shadow-none rounded-0 border-dark text-white" placeholder="ARAMA YAP" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text bg-transparent shadow-none text-white border-dark" id="basic-addon2"><i class="bi bi-search"></i></span>
+                      </div>
+                    </a>
+                  </li>
+                    <li class="nav-item">
+                      <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-people-fill me-2 fs-4"></i>üyelik</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="shop.html" class="nav-link d-flex align-items-center"><i class="bi bi-cart4 me-2 fs-4"></i>sepet</a>
+                    </li>
+                  </ul>
+                  <div class="d-flex d-xxl-none">
+                    <a class="bi bi-list text-white fs-3 ms-3" data-bs-toggle="offcanvas" href="#canvasMobile" role="button">
+                    </a>
+                  </div>
+
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-block d-xxl-none" 
+        tabindex="-1" id="canvasMobile">
+          <div class="offcanvas-header">
+            <button type="button" class="bi bi-x-circle fs-3 text-white bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+  
+            <ul class="nav nav-pills align-items-center text-uppercase fs-09 text-white d-flex flex-column">
+              <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">anasayfa</a></li>
+              <li class="nav-item"><a href="game.html" class="nav-link">oyunlar</a></li>
+              <li class="nav-item"><a href="tournament.html" class="nav-link">turnuvalar</a></li>
+              <li class="nav-item"><a href="alignment.html" class="nav-link">sıralama</a></li>
+              <li class="nav-item"><a href="blog.html" class="nav-link">blog</a></li>
+              <li class="nav-item"><a href="javascript:void(0)" class="nav-link">
+  
+                <div class="input-group">
+                  <input type="text" class="form-control search-input shadow-none rounded-0 border-dark text-white" placeholder="ARAMA YAP" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <span class="input-group-text bg-transparent shadow-none text-white border-dark" id="basic-addon2"><i class="bi bi-search"></i></span>
+                </div>
+              </a>
+            </li>
+              <li class="nav-item">
+                <a href="profile.html" class="nav-link d-flex align-items-center"><i class="bi bi-people-fill me-2 fs-4"></i>üyelik</a>
+              </li>
+              <li class="nav-item">
+                <a href="shop.html" class="nav-link d-flex align-items-center"><i class="bi bi-cart4 me-2 fs-4"></i>sepet</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+      </header>
+
+
+
+      <section class="sub-hero">
+        <div class="container-fluid h-100 px-4">
+          <div class="row justify-content-between h-100 align-items-center px-sm-5">
+            <div class="pt-5 pt-sm-0 col-sm-9 col-md-8 col-lg-6 col-xl-4">
+              <div class="section-title">
+                <a  href="" class="text-uppercase text-blue fw-bold "> turnuva</a>
+                <h1 class="text-uppercase display-1 lh-1 custom-gradient">league of legends</h1>
+                <hr style="opacity:1; color: white;">
+                <div class="d-flex justify-content-between">
+                    <div><span class="text-uppercase text-white-50 fs-09 fw-bold">1 gün önce</span></div>
+                    <div><span class="text-uppercase text-white-50 fs-09 fw-bold">klasman: bireysel</span></div>
+                    <div><span class="text-uppercase text-green fs-09 fw-bold d-flex align-items-center"> <div style="height: 25px; width: 25px; border-radius: 50%; background-color: #2fdf71; margin-right: 5px;"></div> devam ediyor</span></div>
+                </div>
+                <div class="d-flex py-2">
+                    <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                    <span class="mx-2"><img src="assets/images/aim-icon.png" alt="" style="width: 20px;"></span>
+                    <span><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3 col-md-4 col-xl-3 mt-4 mt-sm-0">
+              <a href="" class="btn btn-primary py-3 px-4 text-uppercase fs-08 fw-bold rounded-4" 
+              style="text-shadow: 2px 0px #411ddd;  box-shadow: 0px 1px 15px rgba(255, 255, 255, 0.5);">turnuvaya katıl</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tabs-wrappers">
+        <div class="container-fluid h-100 gx-0 overflow-hidden">
+                <div class="multi-content py-4">
+
+                  <!-- Navigation -->
+                  <ul class="nav nav-pills multi-content-nav px-3 px-sm-5 pb-5" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="pills-global-tab" data-bs-toggle="pill" data-bs-target="#pills-global"  role="tab" >genel bakış</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-bracket-tab" data-bs-toggle="pill" data-bs-target="#pills-bracket"  role="tab" >bracket</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-gamer-tab" data-bs-toggle="pill" data-bs-target="#pills-gamer" role="tab" >oyuncular</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content w-100 text-start" id="pills-tabContent">
+                    <!-- Tab Genel -->
+                    <div class="tab-pane fade show active" id="pills-global" role="tabpanel" tabindex="0">
+
+                    <div class="d-flex flex-wrap align-items-center px-4 px-lg-5">
+                        <div class="statistic-box sub-box-wrap box-border me-sm-2 me-xxl-0">
+                            <div class="statistic-box-inner sub-box-wrap-inner d-flex  align-items-center">
+                                <img src="assets/images/subpage/check-circle.png" alt="" style="width: 35px;">
+                                <div class="ps-2">
+                                    <span class="fs-09 d-block span-top">Kayıtlar Açıldı</span>
+                                    <span class="fs-07 d-block span-bottom">Katıldığı Turnuva</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-2 mb-3 d-none d-xxl-inline" style="color: white; width: 100px; height: 2px; background-color: white;"></div>
+                        <div class="statistic-box sub-box-wrap box-border active me-sm-2 me-xxl-0">
+                            <div class="statistic-box-inner sub-box-wrap-inner d-flex  align-items-center">
+                                <img src="assets/images/subpage/logout.png" alt="" style="width: 35px;">
+                                <div class="ps-2">
+                                    <span class="fs-09 d-block span-top">Onay & Seeding</span>
+                                    <span class="fs-07 d-block span-bottom">onaylanır ve gönderilir.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-2 mb-3 d-none d-xxl-inline" style="color: white; width: 100px; height: 2px; background-color: white;"></div>
+                        <div class="statistic-box sub-box-wrap box-border me-sm-2 me-xxl-0">
+                            <div class="statistic-box-inner sub-box-wrap-inner d-flex  align-items-center">
+                                <img src="assets/images/subpage/time-icon.png" alt="" style="width: 35px;">
+                                <div class="ps-2">
+                                    <span class="fs-09 d-block span-top">Başla</span>
+                                    <span class="fs-07 d-block span-bottom">55.09 sonra başlayacak.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ms-2 mb-3 d-none d-xxl-inline" style="color: white; width: 100px; height: 2px; background-color: white;"></div>
+                        <div class="statistic-box sub-box-wrap box-border me-sm-2 me-xxl-0">
+                            <div class="statistic-box-inner sub-box-wrap-inner d-flex  align-items-center">
+                                <img src="assets/images/subpage/time-icon.png" alt="" style="width: 35px;">
+                                <div class="ps-2">
+                                    <span class="fs-09 d-block span-top">Sonuç</span>
+                                    <span class="fs-07 d-block span-bottom">Turnuva sona erdi.</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row px-4 px-lg-5 py-5 infos justify-content-between">
+                      <div class="col-lg-5 text-white-50 fs-08">
+                        <h2 class="text-uppercase display-3 lh-1 custom-gradient mb-4">bilgi</h2>
+                        <div>
+                          <div class="mb-2">Rules:</div>
+                          <ul class="list-unstyled">
+                            <li class="mb-2">Starting the game without your opponent will result in a loss.</li>
+                            <li class="mb-2">Right side in the Challengermode Lobby is Red side in game.</li>
+                            <li class="mb-2">1v1 chat ban rules are applied to this tournament, you can in</li>
+                            <li class="mb-2">Detail read how the 1v1 Chat Ban System works here: How to do 1v1 chat bans</li>
+                          </ul>
+                        </div>
+                        <div class="mt-3">
+                          <div class="mb-2">Reports:</div>
+                          <ul class="list-unstyled">
+                            <li class="mb-2">You can report players for cheating, toxicity, multi-accounting, etc via our Report Form.</li>
+                            <li class="mb-2">
+                              You can find the form via the link below.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+            
+                      <div class="col-lg-4 text-white-50 fs-08 mt-4 mt-lg-0">
+                        <h2 class="text-uppercase display-3 lh-1 custom-gradient mb-4">
+                          ayarlar
+                        </h2>
+                        <div class="d-flex justify-content-between justify-content-lg-start flex-wrap">
+                          <div class="mb-3">
+                            <h3 class="text-uppercase custom-gradient fs-5 lh-1">map</h3>
+                            <p class="text-white-50 fs-08">Howling Abyss</p>
+                          </div>
+                          <div class="mb-3 ms-lg-5 ps-lg-5">
+                            <h3 class="text-uppercase custom-gradient fs-5 lh-1">game mode</h3>
+                            <p class="text-white-50 fs-08">Destroy Nexus</p>
+                          </div>
+                          <div class="mb-3 d-lg-none">
+                            <h3 class="text-uppercase custom-gradient fs-5 lh-1">pick mode</h3>
+                            <p class="text-white-50 fs-08">Blind Pick</p>
+                          </div>
+                        </div>
+                        <div class="mb-3 d-none d-lg-block">
+                          <h3 class="text-uppercase custom-gradient fs-5 lh-1">pick mode</h3>
+                          <p class="text-white-50 fs-08">Blind Pick</p>
+                        </div>
+            
+                      </div>
+                    </div>
+            
+                    <div class="row px-4 px-lg-5 py-5 justify-content-between">
+                      <div class="col-lg-5">
+                        <h2 class="text-uppercase display-3 lh-1 custom-gradient mb-4">format</h2>
+                        <table class="table table-responsive ">
+                          <tr>
+                            <td><img src="assets/images/lol-icon.png" alt="" style="width: 40px;"></td>
+                            <td class="text-white lh-lg">Oyun ve bölge</td>
+                            <td class="text-white-50 lh-lg">Leauge of Legends</td>
+                          </tr>
+                          <tr>
+                            <td><img src="assets/images/time-icon.png" alt="" style="width: 40px;"></td>
+                            <td class="text-white lh-lg">Check-in dönemi</td>
+                            <td class="text-white-50 lh-lg">02.08.2022 - 22.00</td>
+                          </tr>
+                          <tr>
+                            <td><img src="assets/images/three-heart-icon.png" alt="" style="width: 40px;"></td>
+                            <td class="text-white lh-lg">Takım boyutu</td>
+                            <td class="text-white-50 lh-lg">lvl</td>
+                          </tr>
+                          <tr>
+                            <td><img src="assets/images/cart-icon.png" alt="" style="width: 40px;"></td>
+                            <td class="text-white lh-lg">Giriş ücreti</td>
+                            <td class="text-white-50 lh-lg">Ücretsiz</td>
+                          </tr>
+                          <tr>
+                            <td><img src="assets/images/diamond-icon.png" alt="" style="width: 40px;"></td>
+                            <td class="text-white lh-lg">Ödül havuzu</td>
+                            <td class="text-white-50 lh-lg">155$</td>
+                          </tr>
+                          <tr>
+                            <td><img src="assets/images/pc-icon.png" alt="" style="width: 40px;"></td>
+                            <td class="text-white lh-lg">Format</td>
+                            <td class="text-white-50 lh-lg">Tekli eleme</td>
+                          </tr>
+            
+                      </table>
+                      </div>
+                      <div class="col-lg-4 mt-5 mt-xl-0">
+                        <h2 class="text-uppercase display-3 lh-1 custom-gradient mb-4">oyuncular</h2>
+                        <div class="register-table">
+                          <img src="assets/images/gamer-icon.png" alt="gamer icon" style="width: 300px;">
+                          <p class="text-white fs-09 py-3">Mar69tin, ti fathy# <span class="text-white-50">ve diğer 3 oyuncu kayıt yaptırdı.</span></p>
+                          <table class="table table-responsive ">
+                              <tr>
+                                <td><img src="assets/images/stop-icon.png" alt="" style="width: 35px; height: 35px;"></td>
+                                <td class="text-white lh-lg">Kayıt Olan</td>
+                                <td class="text-white-50 lh-lg">12</td>
+                              </tr>
+                              <tr>
+                                <td><img src="assets/images/check-icon.png" alt="" style="width: 35px; height: 35px;"></td>
+                                <td class="text-white lh-lg">Onaylanan</td>
+                                <td class="text-white-50 lh-lg">10</td>
+                              </tr>
+                              <tr>
+                                <td><img src="assets/images/time-icon.png" alt="" style="width: 35px; height: 35px;"></td>
+                                <td class="text-white lh-lg">Kalan Yer</td>
+                                <td class="text-white-50 lh-lg">8</td>
+                              </tr>
+                          </table>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="contents-bg px-4 py-5">
+                      <div class="container-fluid px-lg-4 py-5">
+                        <div class="row px-lg-5 py-5 justify-content-between align-items-center">
+                          <div class="col-lg-3">
+                            <img src="assets/images/keep-in-touch.png" alt="">
+                            <div class="py-3">
+                              <div class="input-group flex-nowrap ms-lg-4">
+              
+                                <input type="text" class="form-control bg-transparent fs-08 fw-bold text-uppercase custom-purple-input shadow-none border-end-0" placeholder="e-mail adres" aria-label="Username" aria-describedby="addon-wrapping">
+                                <button type="submit" class="input-group-text bg-transparent border-start-0" id="addon-wrapping" style="border: 2px solid #d042ff;"><i class="bi bi-box-arrow-right fs-5" style="color: #d042ff;"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-9 py-4">
+                            <a href="" class="text-end">
+                              <img src="assets/images/laptop.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="upcomingss px-xl-4 py-5">
+                         
+                              <div class="section-title mb-5 pt-5">
+                                  <h1 class="text-uppercase display-3 lh-1 custom-gradient">yaklaşan turnuvalar</h1>
+                                  <p class="text-white-50">Gün içinde ki turnuvalara göz at!</p>
+                              </div>
+                  
+                              <div class="swiper gaming-slide">
+                                  <div class="swiper-wrapper py-4">
+                                      <div class="swiper-slide">
+                                          <figure class="gaming-item">
+                                              <img src="assets/images/game1.png" alt="Gaming Item">
+                                              <figcaption class="px-3 py-2">
+                                                  <p class="text-white">Benetlusit Legends Premium</p>
+                                                  <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                                  <div class="d-flex py-2">
+                                                      <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                                      <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                                  </div>
+                                              </figcaption>
+                                          </figure>
+                                      </div>
+                                      <div class="swiper-slide">
+                                          <figure class="gaming-item">
+                                              <img src="assets/images/game2.png" alt="Gaming Item">
+                                              <figcaption class="px-3 py-2">
+                                                  <p class="text-white">Benetlusit Legends Premium</p>
+                                                  <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                                  <div class="d-flex py-2">
+                                                      <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                                      <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                                  </div>
+                                              </figcaption>
+                                          </figure>
+                                      </div>
+                                      <div class="swiper-slide">
+                                          <figure class="gaming-item">
+                                              <img src="assets/images/game3.png" alt="Gaming Item">
+                                              <figcaption class="px-3 py-2">
+                                                  <p class="text-white">Benetlusit Legends Premium</p>
+                                                  <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                                  <div class="d-flex py-2">
+                                                      <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                                      <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                                  </div>
+                                              </figcaption>
+                                          </figure>
+                                      </div>
+                                      <div class="swiper-slide">
+                                          <figure class="gaming-item">
+                                              <img src="assets/images/game1.png" alt="Gaming Item">
+                                              <figcaption class="px-3 py-2">
+                                                  <p class="text-white">Benetlusit Legends Premium</p>
+                                                  <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                                  <div class="d-flex py-2">
+                                                      <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                                      <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                                  </div>
+                                              </figcaption>
+                                          </figure>
+                                      </div>
+                                      <div class="swiper-slide">
+                                          <figure class="gaming-item">
+                                              <img src="assets/images/game2.png" alt="Gaming Item">
+                                              <figcaption class="px-3 py-2">
+                                                  <p class="text-white">Benetlusit Legends Premium</p>
+                                                  <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                                  <div class="d-flex py-2">
+                                                      <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                                      <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                                  </div>
+                                              </figcaption>
+                                          </figure>
+                                      </div>
+                                      <div class="swiper-slide">
+                                          <figure class="gaming-item">
+                                              <img src="assets/images/game3.png" alt="Gaming Item">
+                                              <figcaption class="px-3 py-2">
+                                                  <p class="text-white">Benetlusit Legends Premium</p>
+                                                  <span class="text-uppercase text-white-50 fs-07 d-block">lol . lvl . €3.00 . 02.08.2022</span>
+                                                  <div class="d-flex py-2">
+                                                      <span><img src="assets/images/war-icon.png" alt="" style="width: 20px;"></span>
+                                                      <span class="ms-2"><img src="assets/images/diamond-icon.png" alt="" style="width: 20px;"></span>
+                                                  </div>
+                                              </figcaption>
+                                          </figure>
+                                      </div>
+                  
+                  
+                                  </div>
+                                  <div class="swiper-pagination position-absolute bg-dark" style="top: 99%;"></div>
+                              </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    </div>
+                    <!-- Tab Bracket -->
+                    <div class="tab-pane fade" id="pills-bracket" role="tabpanel" tabindex="0">
+                      <div class="btackets-wrapper">
+
+                        <div class="mindmap">
+                          <ol class="children children_leftbranch">
+                              <li class="children__item">
+                                  <div class="node">
+                                      <div class="node__text">
+                                          <img src="assets/images/gamer-1.png" alt="">
+                                          <span>Furkan Beydemir</span>
+                                      </div>
+                                  </div>
+                                  <ol class="children">
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                  </ol>
+                              </li>
+                              <li class="children__item">
+                                  <div class="node">
+                                    <div class="node__text">
+                                      <img src="assets/images/gamer-1.png" alt="">
+                                      <span>Furkan Beydemir</span>
+                                  </div>
+                                  </div>
+                                  <ol class="children">
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                  </ol>
+                              </li>
+                              <li class="children__item">
+                                  <div class="node">
+                                    <div class="node__text">
+                                      <img src="assets/images/gamer-1.png" alt="">
+                                      <span>Furkan Beydemir</span>
+                                  </div>
+                                  </div>
+                                  <ol class="children">
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                  </ol>
+                              </li>
+                          </ol>
+                          <div class="node node_root">
+                              <img src="assets/images/champions.png" alt="" style="width: 85%; position: absolute; top: -100px;">
+                              <div class="node__text text-center d-flex justify-content-center">FİNAL</div>
+                          </div>
+                          <ol class="children children_rightbranch">
+                              <li class="children__item">
+                                  <div class="node">
+                                    <div class="node__text">
+                                      <img src="assets/images/gamer-1.png" alt="">
+                                      <span>Furkan Beydemir</span>
+                                  </div>
+                                  </div>
+                                  <ol class="children">
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                  </ol>
+                              </li>
+                              <li class="children__item">
+                                  <div class="node">
+                                    <div class="node__text">
+                                      <img src="assets/images/gamer-1.png" alt="">
+                                      <span>Furkan Beydemir</span>
+                                  </div>
+                                  </div>
+                                  <ol class="children">
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                  </ol>
+                              </li>
+                              <li class="children__item">
+                                  <div class="node">
+                                    <div class="node__text">
+                                      <img src="assets/images/gamer-1.png" alt="">
+                                      <span>Furkan Beydemir</span>
+                                  </div>
+                                  </div>
+                                  <ol class="children">
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                      <li class="children__item">
+                                          <div class="node">
+                                            <div class="node__text">
+                                              <img src="assets/images/gamer-1.png" alt="">
+                                              <span>Furkan Beydemir</span>
+                                          </div>
+                                          </div>
+                                      </li>
+                                  </ol>
+                              </li>
+                          </ol>
+                      </div>
+
+
+                      </div>
+                    </div>
+                    <!-- Tab Katılımcılar -->
+                    <div class="tab-pane fade" id="pills-gamer" role="tabpanel" tabindex="0">
+                      <div class="gamer-tab-wrapper px-5 row justify-content-between">
+                          <div class="col-lg-6 col-xl-4 col-xxl-3 mb-4">
+                            <div class="d-flex ">
+                              <h2 class="text-uppercase display-4 lh-1 custom-gradient mb-4">onaylandı</h2>  
+                              <span class="custom-purple-text ms-2 pb-1 pb-lg-0  pt-lg-3 fs-5 text-uppercase">8 katılımcı</span>
+                            </div>
+
+                            <p class="text-white-50 fs-08">Bu oyuncuların turnuvaya katılım işlemi onaylanmıştır</p>
+
+                            <table class="table table-responsive my-5 text-start  overflow-scroll pb-5">
+
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+
+      
+                              
+      
+      
+                          </table>
+                          </div>
+
+                          <div class="col-lg-6 col-xl-4 mb-4">
+                            <div class="d-flex ">
+                              <h2 class="text-uppercase display-4 lh-1 custom-gradient mb-4">onay bekliyor</h2>  
+                              <span class="custom-orange-text ms-2 pb-1 pb-lg-0 pt-lg-3 fs-5 text-uppercase">4 katılımcı</span>
+                            </div>
+
+                            <p class="text-white-50 fs-08">Bu oyuncuların turnuvaya katılım işlemi incelenmektedir.</p>
+
+                            <table class="table table-responsive my-5 text-start  overflow-scroll pb-5 table-onay">
+
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+
+
+      
+                              
+      
+      
+                          </table>
+                          </div>
+
+                          <div class="col-lg-6 col-xl-4 mb-4">
+                            <div class="d-flex ">
+                              <h2 class="text-uppercase display-4 lh-1 custom-gradient mb-4">reddedildi</h2>  
+                              <span class="custom-red-text ms-2 pb-1 pb-lg-0 pt-lg-3 fs-5 text-uppercase">2 katılımcı</span>
+                            </div>
+
+                            <p class="text-white-50 fs-08">‘Bu oyuncuların turnuva başvuruları reddedilmiştir. 
+                              Daha fazla bilgi için Destek Talebi oluşturunuz.</p>
+
+                            <table class="table table-responsive my-5 text-start  overflow-scroll pb-5 table-onay">
+
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="d-flex align-items-center">
+                                          <img src="assets/images/subpage/register-profile.png" alt="" style="width: 40px;">
+                                          <p class="text-white fs-08 fw-bold ms-3">furkanbeydemir</p>
+                                      </div>
+                                  </td>
+                              </tr>
+
+
+
+      
+                              
+      
+      
+                          </table>
+                          </div>
+
+
+                      </div>
+                    </div>
+
+               </div>
+              </div>
+           
+        </div>
+
+
+      </section>
+
+
+
+      <footer class="py-5  bg-custom-dark">
+        <div class="container-fluid px-3 px-sm-5 py-md-5">
+          <div class="row justify-content-between">
+            <div class="col-md-3 mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <img src="assets/images/home/logo.png" alt="" style="width: 270px;">
+              </a>
+              <p class="text-muted">Türkiye’nin en güvenilir turnuva platformu.</p>
+            </div>
+        
+            <div class="col-md-4 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-gradient mb-3">oyunlar</h4>
+              <ul class="list-unstyled row">
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FIFA 2022</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kafa Topu 2</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Leauge of Legends</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rocket League</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teamfight Tactics</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Valorant</a></li>
+                </div>
+                <div class="col-4">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CS:GO</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hearthstone</a></li>
+                </div>
+
+              </ul>
+            </div>
+        
+
+        
+            <div class="col-md-2 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-gradient mb-3">kurumsal</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hakkımızda</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">S.S.S</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Kariyer</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-3">
+              <h4 class="text-uppercase fs-3 lh-1 custom-gradient mb-3">sosyal medya</h4>
+              <ul class="nav d-flex">
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-instagram"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-youtube"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-twitter"></i></a></li>
+                <li class="nav-item mb-2 me-3"><a href="#" class="nav-link p-0 text-white text-center rounded-circle" style="line-height: 1.8; border: 1px solid white; width: 30px; height: 30px; "><i class="bi bi-discord"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+      
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/midmap.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      $(function () {
+          $('.mindmap').mindmap();
+      });
+  </script>
+</body>
+</html>
